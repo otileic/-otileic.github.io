@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+<style type='text/css'>
+    body {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #e5e5e5, #8281f6, #c1b8c8, #b9e6ff);
+        background-size: 200% 100%;
+        -webkit-animation: Gradient 20s ease infinite;
+        -moz-animation: Gradient 20s ease infinite;
+        animation: Gradient 20s ease infinite;
+    }
+
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @-moz-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    </style>
+  </head>
+  <body>
+	<script src="https://unpkg.com/hydra-synth"></script>
+  
+
+
+<script>
+      // create a new hydra-synth instance
+      var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+      
+//osc(10, 0.002, 1).luma(0.5, 0.01).out()
+  
+s0.initImage("inari.png")
+
+
+
+src(s0)
+    //.thresh(0.1)
+    .add(noise(6, 0.03)
+      .color(0,0.1,0,0)
+      .scale(0.5,[1.15],()=>window.innerWidth/window.innerHeight))
+    .contrast(1.5).luma(0.35, 0.15)
+    .modulate(o0, () => 0.12)
+    //.luma(0.5, 0.1)
+    .scale(0.99, 0.99)
+    //.pixelate(100*10, 50*10)
+
+.out()
+
+
+
+    </script> 
+ 
+
+    <!--<script src="sketch.js"></script>
+-->
+
+</html>
